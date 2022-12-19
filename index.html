@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Astoria grande"/>
+    <title>Astoria Grande</title>
+    <link rel="stylesheet" href="./style/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="./style/esri-leaflet-geocoder.css">
+    <link rel="stylesheet" href="./style/leaflet2.css"/>
+    <link rel="stylesheet" href="./style/bootstrap3.3.5.min.css"/>
+    <link rel="stylesheet" href="./style/bootstrap4.0.0.min.css">
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body style="overflow:hidden;">
+<a id="downloadAnchorElem" style="display:none"></a>
+<div id="map"></div>
+<div id="CardInfo">
+
+    <div class="AG-img">
+        <img
+                alt=""
+                src="images/novogodnjaja-logo.png"
+        />
+    </div>
+    <div id="clock"></div>
+    <div id="portCalls">
+        <div class="firstPortBlock">
+            <div class="infoBlock">
+                <div id="PortDepartureIMG" class="ImgBlock"></div>
+                <div id="PortDeparture" class="TxtPortBlock"></div>
+            </div>
+        </div>
+        <div class="secondPortBlock">
+            <div class="infoBlock">
+                <div id="PortArrivalIMG" class="ImgBlock"></div>
+                <div id="PortArrival" class="TxtPortBlock"></div>
+            </div>
+        </div>
+    </div>
+    <div id="wayCSS">
+        <div class="firstPortBlock">
+            <div id="spanArrival" class="infowWayRouteBlocks"></div>
+        </div>
+        <div class="secondPortBlock">
+            <div id="spanDeparture" class="infowWayRouteBlocks"></div>
+        </div>
+    </div>
+    <div id="distance"></div>
+    <div id="Route">
+        <div class="firstRouteBlock">
+            <span class="anotherTxt">Пройдено</span>
+            <div id="Passed" class="infoWayBlock"></div>
+        </div>
+        <div class="secondRouteBlock">
+            <span class="anotherTxt">Осталось</span>
+            <div id="Stay" class="infoWayBlock"></div>
+        </div>
+    </div>
+    <div id="infoAll">
+        <div class="firstBlock">
+            <div class="infoBlock">
+                <div id="SpeedIMG" class="ImgBlock"></div>
+                <div id="Speed" class="TxtBlock"></div>
+            </div>
+            <div class="infoBlock">
+                <div id="TempIMG" class="ImgBlock"></div>
+                <div id="Temp" class="TxtBlock"></div>
+            </div>
+            <div class="infoBlock">
+                <div id="WaveIMG" class="ImgBlock"></div>
+                <div id="Wave" class="TxtBlock"></div>
+            </div>
+        </div>
+        <div class="secondBlock">
+            <div class="infoBlock">
+                <div id="CourseIMG" class="ImgBlock"></div>
+                <div id="Course" class="TxtBlock"></div>
+                `
+            </div>
+            <div class="infoBlock">
+                <div id="TempWaterIMG" class="ImgBlock"></div>
+                <div id="TempWater" class="TxtBlock"></div>
+            </div>
+            <div class="infoBlock">
+                <div id="WindSpeedIMG" class="ImgBlock"></div>
+                <div id="WindSpeed" class="TxtBlock"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nameLegend">Скорость судна, уз</div>
+<div id="legend" class="metric-legend noselect">
+    <span style="width: 14.285%">0</span>
+    <span style="width: 14.285%">2</span>
+    <span style="width: 14.285%">5</span>
+    <span style="width: 14.285%">9</span>
+    <span style="width: 14.285%">15</span>
+    <span style="width: 14.285%">21</span>
+    <span style="width: 14.285%">30</span>
+</div>
+<script src="script/leafletMobile.js"></script>
+<script src="./script/popper.min.js"></script>
+<script src="./script/jquery-3.2.1.slim.min.js"></script>
+<script src="./script/leaflet.js"></script>
+<script src="./script/leaflet.hotline.js"></script>
+<script src="./script/leaflet.markercluster-src.js"></script>
+<script src="./script/leaflet.rotatedMarker.min.js" type="text/javascript"></script>
+<script src="./script/bootstrap.bundle.min.js"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>
